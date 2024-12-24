@@ -5,7 +5,7 @@
         <classes>
             <class name="com.baeldung.LambdaTestEcommerceTests">
                 <methods>
-                    <include name="testSearchProduct"/>
+                    <include name="whenUserSearchesForAProduct_ThenSearchResultsShouldBeDisplayed"/>
                 </methods>
             </class>
         </classes>
