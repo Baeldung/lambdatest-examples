@@ -22,8 +22,8 @@ jobs:
 
     runs-on: ubuntu-latest
     env:
-      LAMDATEST_USERNAME: ${{ secrets.LAMBDATEST_USERNAME }}
-      LAMBDATEST_ACCESS_KEY: ${{ secrets.LAMBDATEST_ACCESS_KEY }}
+      LT_USERNAME: ${{ secrets.LT_USERNAME }}
+      LT_ACCESS_KEY: ${{ secrets.LT_ACCESS_KEY }}
       
     steps:
     - uses: actions/checkout@v4
