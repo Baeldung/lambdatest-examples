@@ -17,8 +17,10 @@ public class BaseTest {
 
     @BeforeTest
     public void setup() {
-        String userName = System.getenv("LT_USERNAME") == null ? "LT_USERNAME" : System.getenv("LT_USERNAME");
-        String accessKey = System.getenv("LT_ACCESS_KEY") == null ? "LT_ACCESS_KEY" : System.getenv("LT_ACCESS_KEY");
+        String userName = System.getenv("LAMBDATEST_USERNAME") == null ? "LAMBDATEST_USERNAME" : System.getenv(
+            "LT_USERNAME");
+        String accessKey = System.getenv("LAMBDATEST_ACCESS_KEY") == null ? "LAMBDATEST_ACCESS_KEY" : System.getenv(
+            "LT_ACCESS_KEY");
         String gridUrl = "@hub.lambdatest.com/wd/hub";
         try {
             this.driver = new RemoteWebDriver(new URL ("http://" + userName + ":" + accessKey + gridUrl), getChromeOptions());
