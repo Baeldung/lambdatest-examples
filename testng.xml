@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Selenium GitHub Actions demo">
-    <test name="Searching a product from the HomePage of LambdaTest ECommerce website">
+    <test name="Searching a product from the HomePage">
         <classes>
             <class name="com.baeldung.LambdaTestEcommerceTests">
                 <methods>
