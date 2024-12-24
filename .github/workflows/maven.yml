@@ -21,7 +21,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-
+    env:
+      LAMDATEST_USERNAME: ${{ secrets.LAMBDATEST_USERNAME }}
+      LAMBDATEST_ACCESS_KEY: ${{ secrets.LAMBDATEST_ACCESS_KEY }}
+      
     steps:
     - uses: actions/checkout@v4
     - name: Set up JDK 17
@@ -31,9 +34,6 @@ jobs:
         distribution: 'temurin'
         cache: maven
     - name: Build and Test with Maven
-      env:
-        LAMDATEST_USERNAME: ${{secrets.LAMBDATEST_USERNAME}}
-        LAMBDATEST_ACCESS_KEY: ${{secrets.LAMBDATEST_ACCESS_KEY}}
       run: mvn clean install 
         
   
