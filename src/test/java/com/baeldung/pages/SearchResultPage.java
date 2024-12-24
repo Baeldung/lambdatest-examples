@@ -9,14 +9,13 @@ public class SearchResultPage {
 
     private RemoteWebDriver driver;
 
-    public SearchResultPage (final RemoteWebDriver driver) {
+    public SearchResultPage (RemoteWebDriver driver) {
         this.driver = driver;
     }
 
     public void verifySearchResultPageHeader (String productName) {
         String pageHeader = driver.findElement (By.tagName ("h1"))
             .getText ();
-
         assertEquals (pageHeader, "Search - " + productName);
     }
 }
