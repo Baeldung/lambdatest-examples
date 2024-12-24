@@ -6,8 +6,7 @@ import org.testng.annotations.Test;
 
 public class LambdaTestEcommerceTests extends BaseTest {
     @Test
-    public void testSearchProduct () {
-
+    public void whenUserSearchesForAProduct_ThenSearchResultsShouldBeDisplayed () {
         String productName = "iPhone";
 
         driver.get ("https://ecommerce-playground.lambdatest.io/");
