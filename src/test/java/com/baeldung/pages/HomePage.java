@@ -5,8 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class HomePage {
-
-    private  RemoteWebDriver driver;
+    private final RemoteWebDriver driver;
 
     public HomePage (RemoteWebDriver driver) {
         this.driver = driver;
@@ -19,5 +18,4 @@ public class HomePage {
         searchBtn.click ();
         return new SearchResultPage (driver);
     }
-
 }

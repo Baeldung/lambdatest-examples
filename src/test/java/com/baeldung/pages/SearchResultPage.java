@@ -7,7 +7,7 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 
 public class SearchResultPage {
 
-    private RemoteWebDriver driver;
+    private final RemoteWebDriver driver;
 
     public SearchResultPage (RemoteWebDriver driver) {
         this.driver = driver;
