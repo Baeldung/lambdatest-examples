@@ -20,7 +20,7 @@ public class BaseTest {
 
     public ChromeOptions getChromeOptions () {
         var browserOptions = new ChromeOptions ();
-        browserOptions.setPlatformName ("Windows 11");
+        browserOptions.setPlatformName ("Windows 10");
         browserOptions.setBrowserVersion ("latest");
         HashMap<String, Object> ltOptions = new HashMap<String, Object> ();
         ltOptions.put ("project", "LambdaTest e-commerce website automation");
