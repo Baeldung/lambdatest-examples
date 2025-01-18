@@ -5,10 +5,10 @@ import com.baeldung.pages.SearchResultPage;
 import org.testng.annotations.Test;
 
 public class LambdaTestEcommerceTests extends BaseTest {
-    @Test
-    public void whenUserSearchesForAProduct_ThenSearchResultsShouldBeDisplayed () {
-        String productName = "iPhone";
 
+    @Test
+    public void whenUserSearchesForAProduct_thenSearchResultsShouldBeDisplayed () {
+        String productName = "iPhone";
         driver.get ("https://ecommerce-playground.lambdatest.io/");
         HomePage homePage = new HomePage (driver);
         SearchResultPage searchResultPage = homePage.searchProduct (productName);
